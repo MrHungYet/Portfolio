@@ -14,7 +14,7 @@ This is a project I did to enrich my own project portfolio, to showcase how I ap
 
 In the cutthroat world of e-commerce, refining marketing strategies and improving customer experience are vital to long-term success.
 
-The project uses the E-Commerce Sales Data from Kaggle. (https://www.kaggle.com/datasets/carrie1/ecommerce-data/data).
+[The project uses the E-Commerce Sales Data from Kaggle.](https://www.kaggle.com/datasets/carrie1/ecommerce-data/data).
 
 ## 2. Goals
 
