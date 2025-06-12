@@ -1,12 +1,14 @@
 # Portfolio
 
-# Applying RFM Analysis to Improve Marketing Effectiveness
+# [Applying RFM Analysis to Improve Marketing Effectiveness](https://docs.google.com/document/d/1JxeyU1S1GsZky5kex_BliNSYn8d9AbNRjXar1UtTv0A/edit?usp=sharing)
 
 This is a project I did to enrich my own project portfolio, to showcase how I approach a data analysis project.
 
 **Skills:** data cleaning, data analysis, data visualization.
 
 **Technology:** SQL Big Querry, Looker Studio.
+
+[**Dashboard**](https://lookerstudio.google.com/reporting/dac1b835-5b99-4f45-944e-107fa25802c9)
 
 ## 1.Project Background
 
