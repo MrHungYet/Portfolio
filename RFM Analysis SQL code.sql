@@ -1,6 +1,6 @@
--- Bước 1: Tạo bảng tạm thay thế bằng CTE (Common Table Expression)
+-- Step 1: Create a replacement temporary table using CTE (Common Table Expression)
 WITH customer_countries AS (
-  -- Bước mới: Lấy country chính xác cho từng customer
+  -- Get the correct country for each customer
   SELECT 
     CustomerID,
     Country
@@ -12,7 +12,7 @@ WITH customer_countries AS (
     FROM `e-commerce-data-461515.Ecommerce_data.ecommerce_order`
     WHERE CustomerID IS NOT NULL
   ) 
-  WHERE rn = 1  -- Chỉ lấy country từ bản ghi gần nhất của mỗi customer
+  WHERE rn = 1  -- Get only country from the most recent record of each customer
 ),
 
 
@@ -43,7 +43,7 @@ rfm_raw AS (
   GROUP BY CustomerID
 ),
 
--- Bước 2: Tính điểm RFM (dùng NTILE thông qua subquery)
+-- Step 2: Calculate RFM score (using NTILE via subquery)
 rfm_scores AS (
   SELECT 
     CustomerID,
@@ -57,7 +57,7 @@ rfm_scores AS (
   FROM rfm_raw
 )
 
--- Bước 3: Phân nhóm và xuất kết quả (không cần temporary table)
+-- Step 3: Group and export results (no need for temporary table)
 SELECT 
   CustomerID,
   Country,
